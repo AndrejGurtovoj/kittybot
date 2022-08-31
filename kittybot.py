@@ -43,7 +43,7 @@ def wake_up(update, context):
     name = update.message.chat.first_name
     button = ReplyKeyboardMarkup([
         ['/newcat'],
-        ['Который час?', 'Определи мой ip']], resize_keyboard=True)
+        ['Который час?']], resize_keyboard=True)
     context.bot.send_message(
         chat_id=chat.id,
         text='Привет, {}. Посмотри, какого котика я тебе нашёл!'.format(name),
